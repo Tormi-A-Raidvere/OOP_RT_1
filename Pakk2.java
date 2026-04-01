@@ -3,7 +3,6 @@ import java.util.List;
 
 public class Pakk {
     private List<Kaart> kaardid;
-    private List<Kaart> õpitud;
 
     public Pakk(List<Kaart> kaardid) {
         this.kaardid = new ArrayList<>();
