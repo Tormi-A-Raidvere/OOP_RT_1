@@ -9,4 +9,8 @@ public class Kaart {
 
     public String getEsikylg() { return esikylg; }
     public String getTagakylg() { return tagakylg; }
+
+    @Override
+    public String toString() {
+        return esikylg + " — " + tagakylg;
 }
