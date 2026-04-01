@@ -6,4 +6,7 @@ public class Kaart {
         this.esikylg = esikylg;
         this.tagakylg = tagakylg;
     }
+
+    public String getEsikylg() { return esikylg; }
+    public String getTagakylg() { return tagakylg; }
 }
