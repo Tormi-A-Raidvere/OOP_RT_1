@@ -88,9 +88,15 @@ public class Main {
                 opitavad.eemaldaKaart(praeguneKaart);
                 teatud.lisaKaart(praeguneKaart);
                 
-                JOptionPane.showMessageDialog(null, 
-                        "Tubli! Kaart eemaldatud.\nÕppida on jäänud " + opitavad.pakiSuurus() + " kaarti.", 
-                        "Staatus", JOptionPane.PLAIN_MESSAGE);
+                if (opitavad.pakiSuurus()==1){
+                    JOptionPane.showMessageDialog(null,
+                            "Tubli! Kaart eemaldatud.\nÕppida on jäänud " + opitavad.pakiSuurus() + " kaart.",
+                            "Staatus", JOptionPane.PLAIN_MESSAGE);
+                }else {
+                    JOptionPane.showMessageDialog(null,
+                            "Tubli! Kaart eemaldatud.\nÕppida on jäänud " + opitavad.pakiSuurus() + " kaarti.",
+                            "Staatus", JOptionPane.PLAIN_MESSAGE);
+                }
             } else { //Kasutaja valis "Ei tea"
                 JOptionPane.showMessageDialog(null, 
                         "Pole hullu, kaart läheb pakki tagasi ja kordame hiljem uuesti!", 
