@@ -1,10 +1,18 @@
 public class Kaart {
     private String esikylg;
     private String tagakylg;
+    private boolean opitud;
 
     public Kaart(String esikylg, String tagakylg) {
         this.esikylg = esikylg;
         this.tagakylg = tagakylg;
+        this.opitud = false;
+    }
+
+    public Kaart(String esikylg, String tagakylg, boolean opitud) {
+        this.esikylg = esikylg;
+        this.tagakylg = tagakylg;
+        this.opitud = opitud;
     }
 
     public String getEsikylg() {
@@ -13,6 +21,13 @@ public class Kaart {
 
     public String getTagakylg() {
         return tagakylg;
+    }
+
+    public boolean getOpitud() {
+        return opitud;
+    }
+    public void setOpitud(boolean op) {
+        this.opitud = op;
     }
 
     @Override

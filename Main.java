@@ -112,3 +112,6 @@ public class Main {
         }
     }
 }
+
+
+//Tee kõik AI-ga ümber
